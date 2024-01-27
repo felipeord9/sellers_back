@@ -45,7 +45,7 @@ const enviarCorreo = async (body)=>{
         html:`<p>El vendedor ${body.vendedor} ha registrado una visita
         al cliente ${body.cliente}, ingresa al aplicativo para
         ver más detalles.</p>
-        <p>http://localhost:3000/</p>`
+        <p>https://pedidos.granlangostino.net:5521/login/</p>`
      }
      const respuesta = await MailService.sendEmails(mail)
      return respuesta
