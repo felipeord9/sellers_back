@@ -6,6 +6,7 @@ const AuthRoutes = require('./authRoutes')
 const AgencyRoutes = require('./agencyRoutes')
 const RegistroRoutes = require('./registroRoutes')
 const DepartamentoRoutes= require('./departamentoRoutes')
+const GpsRoutes = require('./gpsRoutes')
 
 function routerApi(app) {
     const router = express.Router()
@@ -19,6 +20,6 @@ function routerApi(app) {
     router.use('/agencies', AgencyRoutes)
     router.use('/registro',RegistroRoutes)
     router.use('/departamentos',DepartamentoRoutes )
-
+    router.use('/gps',GpsRoutes)
     }
 module.exports = routerApi
